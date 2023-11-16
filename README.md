@@ -8,8 +8,68 @@ Udacity Git Project
 ### Description
 This project aims to introduce beginners to version control using Git. Participants will start by cloning the repository, creating branches for new features, and submitting pull requests. Each task, such as adding a new task or implementing task prioritization, can be a separate branch, allowing contributors to practice branching, merging, and collaborating on a project using Git. This project encourages learning Git in the context of a practical application, making it ideal for those new to version control.
 
-### Files used
-bikeshare.py
+### Git Commands Documentation
+Git Commands Documentation Report
+Introduction
+This document provides a concise guide to essential Git commands for effective version control. I forked a repository from Udacity's GitHub Project to my github repo(https://github.com/Emzykings/pdsnd_github.git).
+
+1. Forking a Repository
+
+Clone the repository to your local machine:
+git clone https://github.com/emzykings/pdsnd_github.git
+
+Navigate to the project directory:
+cd pdsnd_github
+
+Add the original repository as a remote:
+git remote add upstream https://github.com/Udacity/pdsnd_github.git
+
+
+2. Keeping Your Fork Updated
+
+Sync Your Fork with the Original Repository
+Fetch the changes from the upstream repository:
+git fetch upstream
+
+Switch to the main branch:
+git checkout main
+
+Merge the changes from the upstream repository into your fork:
+git merge upstream/main
+
+Push the updated main branch to your fork on GitHub:
+git push origin main
+
+3. Making Changes
+
+Create a Branch for Your Changes
+Create a new branch for your feature or bug fix:
+git checkout -b feature-branch
+
+Stage and Commit Changes
+Stage your changes:
+git add .
+
+Commit your changes with a descriptive message:
+git commit -m "Update"
+
+Push Changes to Your Fork
+Push the changes to your fork on GitHub:
+git push origin feature-branch
+
+
+Collaborating and Pull Requests
+
+Create a Pull Request:
+Navigate to your fork on GitHub.
+Select the branch you want to merge into the original repository.
+Click on "New Pull Request" and follow the prompts.
+
+Review and Merge:
+Collaborate with other contributors in the pull request.
+Once approved, click "Merge Pull Request" on GitHub.
+
+
 
 ### Credits
 
